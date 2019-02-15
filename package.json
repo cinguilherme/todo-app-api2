@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-todo-api",
+  "version": "1.0.0",
+  "description": "Backend api for Todos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Cintra <cinguilherme@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.5"
+  }
+}
