@@ -10,7 +10,10 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
     "mocha": "^5.2.0"
   },
   "dependencies": {
