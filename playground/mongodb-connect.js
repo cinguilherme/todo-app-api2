@@ -1,5 +1,7 @@
 /* eslint-disable no-undef */
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectID } = require('mongodb');
+
+const log = console.info;
 
 const mongoUrl = 'mongodb://localhost:27017/TodoApp';
 
@@ -9,10 +11,12 @@ const callBack = (err, dbObject) => {
   }
   log('connected to the mongodb server.');
 
-  dbObject.collection('Users').find({
-    name: 'Guilherme',
-  }).count().then((count) => {
-    log(count);
+
+  const id = new ObjectID('5c66e94f408900d2d74dd65a');
+  log(id);
+
+  dbObject.collection('Users').deleteOne({ _id: id }).then((result) => {
+    log(result);
   });
 
   return dbObject.close();
